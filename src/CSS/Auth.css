@@ -90,7 +90,7 @@
   @media (max-width: 480px) {
     .loginsignup {
         background: none;
-        min-height: 50vh;
+        min-height: 80vh;
         
     }
     .loginsignup-container {
@@ -105,7 +105,7 @@
     .loginsignup-container button {
      
       height: 40px;
-      font-size: 12px; /* Further adjust font size for small screens */
+      font-size: 12px; 
     }
   
     .loginsignup-login {

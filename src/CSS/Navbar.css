@@ -27,6 +27,7 @@
     font-weight: bold;
     text-decoration: none; 
     transition: color 0.3s ease;
+    
   }
   
   .navbar-brand:hover {
@@ -89,13 +90,66 @@
     top: -1px;
   }
   
-  
+  @media screen and (max-width: 933px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .navbar-links {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #ce4343; 
+        padding: 10px 0; 
+        border-radius: 0 0 5px 5px; 
+      }
+    
+      .navbar-links.active {
+        display: flex; 
+        width: 400px;
+        padding: 12px;
+        margin-left: 300px;
+        
+      }
+    
+      .nav-link {
+        margin: 10px 0;
+      }
+    
+      .hamburger {
+        display: block; 
+      }
+      .logout-btn {
+          background-color: #7f1105; 
+          color: white;
+          border: none;
+          padding: 8px 15px;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+          margin-right: -6px;
+        }
+        .logout-btn:hover {
+          background-color: #4e0b03; 
+          transform: translateY(-2px); 
+        }
+  }
   @media screen and (max-width: 768px) {
     .navbar-container {
       flex-direction: column;
       align-items: center;
     }
-  
+    .navbar-brand {
+        margin-right: 400px;
+        margin-top: 12px;
+    }
+    .fa{
+        margin-top: 12px;
+    }
     .navbar-links {
       display: none; 
       flex-direction: column;
@@ -112,6 +166,7 @@
       width: 400px;
       padding: 12px;
       margin-left: 300px;
+      
     }
   
     .nav-link {
@@ -143,9 +198,15 @@
   @media screen and (max-width: 494px) {
     .navbar-container {
       flex-direction: column;
-      align-items: center;
+      align-items:center;
     }
-  
+    .navbar-brand {
+        margin-right: 175px;
+        margin-top: 12px;
+    }
+    .fa{
+        margin-top: 12px;
+    }
     .navbar-links {
       display: none; 
       flex-direction: column;
